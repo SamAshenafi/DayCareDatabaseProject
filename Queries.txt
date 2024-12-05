@@ -1,4 +1,11 @@
-1. Shows Parent and Children connectred iwht  the childrens info + the parent name
+1. Retrieve All Staff Members and Their Roles
+SELECT 
+    Name AS StaffName,
+    Role AS StaffRole
+FROM 
+    Staff;
+
+2. Shows Parent and Children connectred with  the childrens info + the parent name
 SELECT 
     Children.Name AS ChildName,
     Children.Age,
@@ -12,7 +19,7 @@ JOIN
 ON 
     Children.ParentID = Parents.ParentID;
 
-2. This query groups children by their assigned GroupID(Age group) and counts the number of children in each class.
+3. This query groups children by their assigned GroupID(Age group) and counts the number of children in each class.
 SELECT 
     Classes.Name AS ClassName,
     COUNT(Children.ChildID) AS NumberOfChildren
@@ -24,3 +31,28 @@ ON
     Classes.GroupID = Children.GroupID
 GROUP BY 
     Classes.GroupID;
+
+4. Retrieve Staff Assigned to Each Class
+SELECT 
+    Classes.Name AS ClassName,
+    Classes.AgeRange,
+    Staff.Name AS StaffName,
+    Staff.Role AS StaffRole
+FROM 
+    Classes
+LEFT JOIN 
+    Staff
+ON 
+    Classes.AssignedStaffID = Staff.StaffID;
+
+5. List All Children with Medical Conditions
+SELECT 
+    Name AS ChildName,
+    Age,
+    MedicalConditions
+FROM 
+    Children
+WHERE 
+    MedicalConditions <> 'None';
+
+

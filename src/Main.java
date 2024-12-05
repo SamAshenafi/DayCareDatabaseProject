@@ -15,7 +15,7 @@ public class Main {
                 if (conn != null) {
                     System.out.println("Connected to SQLite database!");
 
-                    // SQL to create the Parents table
+                    //Parents table
                     String createParentsTable = """
                         CREATE TABLE IF NOT EXISTS Parents (
                             ParentID INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -26,7 +26,7 @@ public class Main {
                         );
                     """;
 
-                    // SQL to create the Children table
+                    //Children table
                     String createChildrenTable = """
                         CREATE TABLE IF NOT EXISTS Children (
                             ChildID INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -41,7 +41,7 @@ public class Main {
                         );
                     """;
 
-                    // SQL to create the Staff table
+                    //Staff table
                     String createStaffTable = """
                         CREATE TABLE IF NOT EXISTS Staff (
                             StaffID INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -53,7 +53,7 @@ public class Main {
                         );
                     """;
 
-                    // SQL to create the Classes table
+                    //Classes table
                     String createClassesTable = """
                         CREATE TABLE IF NOT EXISTS Classes (
                             GroupID INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -64,7 +64,7 @@ public class Main {
                         );
                     """;
 
-                    // SQL to create the Attendance table
+                    //Attendance table
                     String createAttendanceTable = """
                         CREATE TABLE IF NOT EXISTS Attendance (
                             AttendanceID INTEGER PRIMARY KEY AUTOINCREMENT,

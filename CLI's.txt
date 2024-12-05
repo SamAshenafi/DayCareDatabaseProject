@@ -1,0 +1,35 @@
+For independant tessting or if there is an issue with the run.bat
+These are for winddows For macOS/Linux replace ; with : (ex java -cp "bin;lib/sqlite-jdbc-3.47.1.0.jar" cli.AddChildCLI)
+
+AddChild:
+Compile:
+javac -cp "lib/sqlite-jdbc-3.47.1.0.jar" -d bin src/cli/AddChildCLI.java
+Run: 
+java -cp "bin;lib/sqlite-jdbc-3.47.1.0.jar" cli.AddChildCLI
+
+DeleteChild:
+Compile:
+javac -cp "lib/sqlite-jdbc-3.47.1.0.jar" -d bin src/cli/DeleteChildCLI.java
+Run:
+java -cp "bin;lib/sqlite-jdbc-3.47.1.0.jar" cli.DeleteChildCLI
+
+AddAttendance:
+Compile:
+javac -cp "lib/sqlite-jdbc-3.47.1.0.jar" -d bin src/cli/AddAttendanceCLI.java
+Run:
+java -cp "bin;lib/sqlite-jdbc-3.47.1.0.jar" cli.AddAttendanceCLI
+
+UpdateChildCLI:
+Compile:
+javac -cp "lib/sqlite-jdbc-3.47.1.0.jar" -d bin src/cli/UpdateChildCLI.java
+Run:
+java -cp "bin;lib/sqlite-jdbc-3.47.1.0.jar" cli.UpdateChildCLI
+
+ViewAttendanceCLI:
+Compile:
+javac -cp "lib/sqlite-jdbc-3.47.1.0.jar" -d bin src/cli/ViewAttendanceCLI.java
+Run:
+java -cp "bin;lib/sqlite-jdbc-3.47.1.0.jar" cli.ViewAttendanceCLI
+
+
+
