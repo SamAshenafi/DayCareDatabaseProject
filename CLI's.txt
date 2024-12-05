@@ -1,4 +1,4 @@
-For independant tessting or if there is an issue with the run.bat
+For independant tessting or if there is an issue with the run.bat or the ./run.sh
 These are for winddows For macOS/Linux replace ; with : (ex java -cp "bin;lib/sqlite-jdbc-3.47.1.0.jar" cli.AddChildCLI)
 
 AddChild:
